@@ -1,0 +1,35 @@
+input{
+    padding: 2px 4px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.get-inputs, .input-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.get-inputs{
+    margin: 0 auto;
+    gap: 8px;
+    padding: 8px 16px;
+    text-align: center;
+    width: 75vw;
+    max-width: 400px;
+}
+
+.input-field{
+    justify-content: center;
+}
+
+.submit-clear{
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-clear > button{
+    padding: 2px 8px;
+    margin-top: 8px;
+}
