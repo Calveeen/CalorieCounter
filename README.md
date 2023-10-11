@@ -1,6 +1,6 @@
 Making a calorie counting app! Trying to make it as simple as possible, the goal is to make tracking your calories easier. 
 
-This app will not provide crazy features such as putting specific foods, and giving out calories. 
+This app will not provide crazy features such as putting specific foods, and giving out food-specific calories. 
 
 It will be the responsibility of the user to calculate their own meal's calories manually, but this app will allow to easily enter those calories and keep track of them.
 
