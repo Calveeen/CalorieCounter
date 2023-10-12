@@ -1,8 +1,18 @@
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import "./CalorieForm.css"
 
-export default function GetInfo({calorieInfo, handleChange, handleClear}){
+export default function GetInfo({calorieInfo, handleChange, handleClear, setModalActive}){
+    const handleClick = () =>{
+        setModalActive(false)
+    }
     return(
         <div className="get-inputs">
+            <div className="exit">
+                <button className="x-btn" onClick={handleClick}>
+                    <FontAwesomeIcon icon={faXmark} size="lg" />
+                </button>
+            </div>
             <div className="food input-field">
                 <label for="food">Food Item</label>
                 <input 

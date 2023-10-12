@@ -1,3 +1,4 @@
+---- OCT/10/23 ----
 Making a calorie counting app! Trying to make it as simple as possible, the goal is to make tracking your calories easier. 
 
 This app will not provide crazy features such as putting specific foods, and giving out calories. 
@@ -10,4 +11,5 @@ The app will also have features such as:
 - Calculator for potential calorie gains/losses based on any caloric routine. 
 - More to come as this app progresses!
 
-LOG: OCT/10/23
+---- OCT/11/23 ----
+Added functionality to the add button by having a modal pop up to enter calorie information! Also able to exit out of the modal by either clicking the "x" in the modal, or anywhere outside of the modal as well.
