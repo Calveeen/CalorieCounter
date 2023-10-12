@@ -11,9 +11,5 @@ The app will also have features such as:
 - Calculator for potential calorie gains/losses based on any caloric routine. 
 - More to come as this app progresses!
 
-<<<<<<< HEAD
 ---- OCT/11/23 ----
 Added functionality to the add button by having a modal pop up to enter calorie information! Also able to exit out of the modal by either clicking the "x" in the modal, or anywhere outside of the modal as well.
-=======
-LOG: OCT/10/23
->>>>>>> cc510ad4c9af83684d34cbdc81efde6ae8550661
