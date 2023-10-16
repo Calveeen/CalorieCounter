@@ -2,18 +2,21 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import "./CalorieForm.css"
 
-export default function GetInfo({calorieInfo, handleChange, handleClear, setModalActive}){
-    const handleClick = () =>{
-        setModalActive(false)
-    }
+export default function GetInfo({
+    calorieInfo, 
+    handleChange, 
+    handleClear, 
+    handleExit,
+    handleSubmit
+}){
     return(
         <div className="get-inputs">
             <div className="exit">
-                <button className="x-btn" onClick={handleClick}>
+                <button className="x-btn" onClick={handleExit}>
                     <FontAwesomeIcon icon={faXmark} size="lg" />
                 </button>
             </div>
-            <div className="food input-field">
+            <div className="input-field">
                 <label for="food">Food Item</label>
                 <input 
                     type="text" 
@@ -23,7 +26,7 @@ export default function GetInfo({calorieInfo, handleChange, handleClear, setModa
                     value={calorieInfo.food}
                 />
             </div>
-            <div className="calories input-field">
+            <div className="input-field">
                 <label for="calories">Calories</label>
                 <input 
                     type="text" 
@@ -33,7 +36,7 @@ export default function GetInfo({calorieInfo, handleChange, handleClear, setModa
                     value={calorieInfo.calories}
                 />
             </div>
-            <div className="time input-field">
+            <div className="input-field">
                 <label for="time">Time</label>
                 <input
                     type="text" 
@@ -45,7 +48,7 @@ export default function GetInfo({calorieInfo, handleChange, handleClear, setModa
             </div>
             <div className="submit-clear">
                 <button className="clear" onClick={handleClear}>Clear</button>
-                <button className="submit">Submit</button>
+                <button className="submit" onClick={handleSubmit}>Submit</button>
             </div>
         </div>
     )

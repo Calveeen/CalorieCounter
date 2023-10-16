@@ -4,7 +4,7 @@ import "./CalorieModal.css"
 
 export default function PlusBtn({modalActive, setModalActive}){
     const handleClick = () =>{
-        setModalActive(!modalActive);
+        setModalActive(true);
     }
     return (
         <button className="add-btn" onClick={handleClick}>

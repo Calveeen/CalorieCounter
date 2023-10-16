@@ -1,0 +1,33 @@
+.food,
+.calories,
+.time{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.entry{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    background-color: rgb(16, 189, 74);
+    
+}
+
+.food{
+    width: 100%;
+    text-align: center;
+    background-color: #525252;
+    color: #E6E6E6;
+    padding: 4px 0;
+}
+
+.calories{
+    color: #000;
+}
+
+.time{
+    margin-left: auto;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+}

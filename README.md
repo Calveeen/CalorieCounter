@@ -13,3 +13,6 @@ The app will also have features such as:
 
 ---- OCT/11/23 ----
 Added functionality to the add button by having a modal pop up to enter calorie information! Also able to exit out of the modal by either clicking the "x" in the modal, or anywhere outside of the modal as well.
+
+---- OCT/15/23 ----
+Able to add entries to display to the screen with the food, calories, and time information after hitting the submit button. Also realized the "Add Date" button doesn't really make sense to be displaying the calorie information. The goal with the "Add date" button is to be able to create a unique slot for the date, and then have this display function that was created today to display for that slot. 

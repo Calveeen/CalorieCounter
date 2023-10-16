@@ -1,7 +1,7 @@
 import {useState} from "react"
 import CalorieForm from "./CalorieForm"
 
-export default function CalorieInformation({setModalActive}){
+export default function CalorieInformation({setModalActive, entries, setEntries}){
     const [calorieInfo, setCalorieInfo] = useState({
         food: "",
         calories: "",
@@ -19,12 +19,23 @@ export default function CalorieInformation({setModalActive}){
         setCalorieInfo(resetInfo);
       }
 
+      const handleExit = () =>{
+        setModalActive(false)
+    }
+
+      const handleSubmit = () =>{
+        
+        setEntries([...entries, calorieInfo])
+        setModalActive(false)
+      }
+
       return (
         <CalorieForm
             calorieInfo={calorieInfo}
             handleChange={handleChange}
             handleClear={handleClear}
-            setModalActive={setModalActive}
+            handleExit={handleExit}
+            handleSubmit={handleSubmit}
         />
       )
 }
