@@ -24,7 +24,9 @@ export default function GetInfo({
                     name="food" 
                     onChange={handleChange}
                     value={calorieInfo.food}
+                    autoComplete="off"
                 />
+
             </div>
             <div className="input-field">
                 <label for="calories">Calories</label>
@@ -34,6 +36,7 @@ export default function GetInfo({
                     name="calories" 
                     onChange={handleChange}
                     value={calorieInfo.calories}
+                    autoComplete="off"
                 />
             </div>
             <div className="input-field">
@@ -44,6 +47,7 @@ export default function GetInfo({
                     name="time" 
                     onChange={handleChange}
                     value={calorieInfo.time}
+                    autoComplete="off"
                 />
             </div>
             <div className="submit-clear">

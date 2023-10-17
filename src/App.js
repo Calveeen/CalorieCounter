@@ -22,7 +22,8 @@ function App() {
       {/*toggle modal popup*/}
       <div className="modal">
         {modalActive && 
-          <CalorieInformation 
+          <CalorieInformation
+            modalActive={modalActive} 
             setModalActive={setModalActive}
             entries={entries} 
             setEntries={setEntries}
@@ -33,7 +34,7 @@ function App() {
       <div className="display-info">
         {entries.length !== 0 ?
           entries.map(entry => (
-            <DisplayEntries entry={entry}/>
+            <DisplayEntries key={entry.time} entry={entry}/>
           )) : ""
         }
       </div>
