@@ -5,13 +5,13 @@
     font-family: "Poppins", sans-serif;
 }
 
-.add-date{
-    padding: 8px;
-}
-
 .modal{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.date-toggle{
+    padding: 16px;
 }

@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react"
 import CalorieForm from "./CalorieForm"
 
-export default function CalorieInformation({modalActive, setModalActive, entries, setEntries}){
+export default function CalorieInformation({modalActive, setModalActive, entryInfo, setEntryInfo}){
   const resetInfo = {food: "", calories: "", time: ""}
 
   const [calorieInfo, setCalorieInfo] = useState({
@@ -41,7 +41,7 @@ export default function CalorieInformation({modalActive, setModalActive, entries
     setSubmitClicked(true)
     console.log(validInput)
     if(validInput.food === true && validInput.calories === true && validInput.time === true){
-      setEntries([...entries, calorieInfo])
+      setEntryInfo([...entryInfo, calorieInfo])
       setModalActive(false)
       setCalorieInfo(resetInfo)
     }

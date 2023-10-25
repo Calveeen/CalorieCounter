@@ -1,4 +1,4 @@
-.add-btn{
+.add-entry{
     padding: 8px;
     font-size: 16px;
     border-radius: 8px;
@@ -10,11 +10,11 @@
     transition: 0.05s ease;
 }
 
-.add-btn:active{
+.add-entry:active{
     scale: 0.95;
     transition: 0.05s ease;
 }
 
-.add-btn:hover{
+.add-entry:hover{
     opacity: 0.90;
 }

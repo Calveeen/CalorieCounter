@@ -1,0 +1,43 @@
+.add-btn{
+    padding: 4px 8px;
+    font-weight: 600;
+    border: none;
+    background-color: #ADD6FF;
+    border-radius: 1rem;
+    border: 2px solid #3B3B3B;
+    color: #3B3B3B;
+    cursor: pointer;
+    transition: 0.05s;
+}
+
+.add-btn:active{
+    scale: 0.98;
+}
+
+.add-btn:hover{
+    background-color: rgba(173, 214, 255, 0.9);
+}
+
+.date-form{
+    width: fit-content;
+}
+
+.date-form > .date-entry{
+    display: flex;
+    flex-direction: column;
+    background-color: #3B3B3B;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.date-form > .enter-cancel{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.date-form > .enter-cancel > button{
+    padding: 4px 8px;
+    cursor: pointer;
+}

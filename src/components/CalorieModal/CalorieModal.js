@@ -7,8 +7,8 @@ export default function PlusBtn({modalActive, setModalActive}){
         setModalActive(true);
     }
     return (
-        <button className="add-btn" onClick={handleClick}>
-            <FontAwesomeIcon icon={faPlus} size="lg" /> Add Date
+        <button className="add-entry" onClick={handleClick}>
+            <FontAwesomeIcon icon={faPlus} size="lg" /> Add Entry
         </button>
     )
 }

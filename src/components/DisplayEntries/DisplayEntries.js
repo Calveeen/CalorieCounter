@@ -1,10 +1,10 @@
 import "./DisplayEntries.css"
-export default function DisplayEntries({entry}){
+export default function DisplayEntries({entryInfo}){
     return (
-        <div className="entry">
-            <span className="food">{entry.food}</span>
-            <span className="calories">{entry.calories} Cals</span>
-            <span className="time">{entry.time}</span>
+        <div className="display-info">
+            <span className="food">{entryInfo.food}</span>
+            <span className="calories">{entryInfo.calories} Cals</span>
+            <span className="time">{entryInfo.time}</span>
         </div>
     )
 }
